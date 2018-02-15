@@ -80,6 +80,7 @@
 .synopsisP {
     margin-top: 10px;
     line-height: 1.3em;
+    text-align: justify;
 }
 
 .afficheDescription_img {
@@ -90,7 +91,14 @@
     width: 200px;
 }
 
-
+.adminPanelButton {
+    font-size: 1.1em;
+    padding:10px;
+    margin: 10px 10px 0 0;
+    color: #ffffff;
+    background-color: #222222;
+    border-radius: 10px;
+}
 
 
 

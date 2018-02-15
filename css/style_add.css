@@ -1,0 +1,71 @@
+.body {
+    background-image: url(../image/bgadmin.jpg);
+}
+
+.container {
+   background: rgba(255, 255, 255, 0.7);
+   width: 85%;
+   margin: 0 auto;
+   overflow: hidden;
+   min-height: 100vh;
+   position: relative;
+}
+
+.textarea {
+    resize: none;
+}
+
+.add_form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.allInput {
+    margin-top: 5px;
+}
+
+.validInput {
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "workMedium";
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.inputName {
+    font-size: 0.8em;
+    margin:12px 0 0 10px;
+    font-family: "workRegular";
+}
+
+.index {
+    position: absolute;
+    top :20px;
+    left:20px;
+}
+
+
+
+
+@font-face {
+   font-family: "workBold";
+   src: url("../fonts/Work_Sans/WorkSans-Bold.ttf");
+}
+
+@font-face {
+   font-family: "workMedium";
+   src: url("../fonts/Work_Sans/WorkSans-Medium.ttf");
+}
+
+@font-face {
+   font-family: "workRegular";
+   src: url("../fonts/Work_Sans/WorkSans-Regular.ttf");
+}

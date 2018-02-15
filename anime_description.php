@@ -59,12 +59,10 @@ session_start();
                    <a href="index.php"><img class="logo" src="image/logo.png" alt="logo"></a>
                    <div class="mainMenu">
                       <div class="sign">
-                         <a href="admin.php">admin_panel</a>
+                         <a href="admin.php"><button class="adminPanelButton" type="button" name="button">admin_panel</button></a>
                       </div>
                       <nav class="mainNav">
-                         <a class="mainNav_link" href="anime_list.php">anime</a>
-                         <a class="mainNav_link" href="#">manga</a>
-                         <a class="mainNav_link" href="#">ma liste</a>
+                         <a class="mainNav_link" href="anime_list.php">anime list</a>
                       </nav>
                    </div>
                 </div>
@@ -86,9 +84,6 @@ session_start();
                 </div>
 
             </section>
-
-
-
 
         </div>
 

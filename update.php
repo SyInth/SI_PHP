@@ -36,18 +36,36 @@ exit();
 }
 ?>
 
-<a href="index.php">index</a>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>OTAKOON</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style_add.css">
+    </head>
+    <body class="body">
+        <div class="container">
+            <a class="index" href="index.php"><img src="image/retourindex.png" alt="logo"></a>
 
-<div class="update">
-<p>Modify</p>
+            <div class="update">
+            <h1 class="h1">Modify</h1>
 
-    <form action="actions/action_update.php" method="POST">
-        <input type="hidden"    name='id'           placeholder="id"        value="<?=$_POST["id"]?>">
-        <input type="text"      name='name'         placeholder="name"      value="<?=$row["name"]?>">
-        <input type="text"      name='genre'        placeholder="genre"     value="<?=$row["genre"]?>">
-        <input type="number"    name='year'         placeholder="year"      value="<?=$row["year"]?>">
-        <input type="number"    name='episode'      placeholder="episode"   value="<?=$row["episode"]?>">
-        <input type="text"      name='synopsis'     placeholder="synopsis"  value="<?=$row["synopsis"]?>">
-        <input type="submit">
-    </form>
-</div>
+                <form class="add_form" action="actions/action_update.php" method="POST">
+                    <input class="allInput" type="hidden" name='id' value="<?=$_POST["id"]?>">
+                    <p class="inputName">Titre :</p>
+                    <input class="allInput" type="text" name='name' value="<?=$row["name"]?>">
+                    <p class="inputName">Genre :</p>
+                    <input class="allInput" type="text" name='genre' value="<?=$row["genre"]?>">
+                    <p class="inputName">Année :</p>
+                    <input class="allInput" type="number" name='year' value="<?=$row["year"]?>">
+                    <p class="inputName">Episodes :</p>
+                    <input class="allInput" type="number" name='episode' value="<?=$row["episode"]?>">
+                    <p class="inputName">Synopsis :</p>
+                    <textarea class="allInput textarea" rows="20" cols="80"name='synopsis'><?=$row["synopsis"]?></textarea>
+                    <input class="allInput" type="submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
