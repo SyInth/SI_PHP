@@ -9,7 +9,9 @@ $sql = "UPDATE
 SET
    `name` = :name,
    `genre` = :genre,
-   `year` = :year
+   `year` = :year,
+   `episode` = :episode,
+   `synopsis` = :synopsis
 WHERE
    id = :id
 ;";
@@ -19,6 +21,8 @@ $stmt->bindValue(':id', $_POST['id']);
 $stmt->bindValue(':name', $_POST['name']);
 $stmt->bindValue(':genre', $_POST['genre']);
 $stmt->bindValue(':year', $_POST['year']);
+$stmt->bindValue(':episode', $_POST['episode']);
+$stmt->bindValue(':synopsis', $_POST['synopsis']);
 $stmt->execute();
 
 header('Location: ../admin.php?id='.$conn->lastInsertId());

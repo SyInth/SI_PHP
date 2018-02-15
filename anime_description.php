@@ -60,8 +60,6 @@ session_start();
                    <div class="mainMenu">
                       <div class="sign">
                          <a href="admin.php">admin_panel</a>
-                         <a href="sign_in.php">connexion</a>
-                          <a href="sign_up.php">inscription</a>
                       </div>
                       <nav class="mainNav">
                          <a class="mainNav_link" href="anime_list.php">anime</a>

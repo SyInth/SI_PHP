@@ -22,7 +22,6 @@ require_once "init_db.php";
                <div class="mainMenu">
                   <div class="sign">
                      <a href="admin.php">admin_panel</a>
-                     <a href="sign_in.php">sign_in</a>
                   </div>
                   <nav class="mainNav">
                      <a class="mainNav_link" href="#">anime</a>
