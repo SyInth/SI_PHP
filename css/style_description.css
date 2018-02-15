@@ -54,11 +54,11 @@
 
 .mainSection {
     display: flex;
-    margin: 100px;
+    margin: 100px 15%;
 }
 
 .mainDescription {
-    margin-left: 50px;
+    margin-left: 70px;
     margin-right: 80px;
 }
 
@@ -79,7 +79,7 @@
 
 .synopsisP {
     margin-top: 10px;
-    line-height: 1.3em;
+    line-height: 1.4em;
     text-align: justify;
 }
 

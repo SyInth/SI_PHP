@@ -9,7 +9,8 @@ require_once "init_db.php";
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>OTAKOON</title>
+       <title>OTAKOON</title>
+       <link rel="shortcut icon" href="image/favicon.png">
       <link rel="stylesheet" href="css/reset.css">
       <link rel="stylesheet" href="css/style_animelist.css">
    </head>
