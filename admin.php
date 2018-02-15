@@ -55,7 +55,7 @@ require_once "init_db.php";
                 while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
                     <tr>
                         <td class="td" ><?=$row["id"]?></td>
-                        <td class="td" ><a href="anime_description.php?id=<?=$row["id"]?>"><?=$row["name"]?></a></td>
+                        <td class="td" ><a class="itemTitle" href="anime_description.php?id=<?=$row["id"]?>"><?=$row["name"]?></a></td>
                         <td class="td" ><?=$row["genre"]?></td>
                         <td class="td" ><?=$row["url"]?></td>
                         <td class="td" ><?=$row["year"]?></td>

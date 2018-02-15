@@ -2,7 +2,7 @@
 require_once "../init_db.php";
 
 //Vérifie que les champs ne sont pas vides et renvoie vers la page admin si c'est le cas
-if (!isset($_POST['name']) || !isset($_POST['genre']) || !isset($_POST['year']) || $_POST['name']==="" || $_POST['genre']==="" || $_POST['year']==="") {
+if (!isset($_POST['name']) || !isset($_POST['genre']) || !isset($_POST['year']) || !isset($_POST['episode']) || !isset($_POST['synopsis']) || $_POST['name']==="" || $_POST['genre']==="" || $_POST['year']==="" || $_POST['episode']==="" || $_POST['synopsis']==="") {
     header('Location: ../admin.php?error_input');
     exit();
 }
@@ -33,9 +33,7 @@ $stmt->bindValue(':episode', $_POST['episode']);
 $stmt->bindValue(':synopsis', $_POST['synopsis']);
 $stmt->execute();
 
-
 $target_file = "../uploads/" . $conn->lastInsertId() . "." . $extension;
 move_uploaded_file($_FILES["image"]["tmp_name"], "./".$target_file);
 
 header('Location: ../admin.php?id='.$conn->lastInsertId());
-exit();
