@@ -13,13 +13,13 @@ require_once "init_db.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style_admin.css">
-    <title>Document</title>
+    <title>OTAKOON</title>
+    <link rel="shortcut icon" href="image/favicon.png">
 </head>
 
 <body class="body">
     <div class="container">
         <a class="index" href="index.php"><img src="image/retourindex.png" alt=""></a>
-
 
         <header class="header">
             <img src="image/adminlogo.png" alt="logo">
