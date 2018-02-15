@@ -41,6 +41,8 @@ exit();
     <head>
         <meta charset="utf-8">
         <title>OTAKOON</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="shortcut icon" href="image/favicon.png">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style_add.css">
     </head>

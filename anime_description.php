@@ -9,28 +9,13 @@
 require_once "init_db.php";
 
 session_start();
-?>
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style_description.css">
-    <title>Document</title>
-</head>
-    <body class="body">
-        <div class="container">
-            <?php
-            if (!isset($_GET['id'])) {
-                header('Location:index.php');
-                exit();
-            }
+if (!isset($_GET['id'])) {
+    header('Location:index.php');
+    exit();
+}
 
-            $sql = "SELECT
+$sql = "SELECT
                 name,
                 genre,
                 url,
@@ -43,15 +28,33 @@ session_start();
                 id = :id
             ;";
 
-            $stmt = $conn->prepare($sql);
-            $stmt->bindValue(":id", $_GET["id"]);
-            $stmt->execute();
-            $row=$stmt->fetch(PDO::FETCH_ASSOC);
+$stmt = $conn->prepare($sql);
+$stmt->bindValue(":id", $_GET["id"]);
+$stmt->execute();
+$row=$stmt->fetch(PDO::FETCH_ASSOC);
 
-            if (!isset($row['name'])) {
-                header('Location:index.php?error');
-                exit();
-            }
+if (!isset($row['name'])) {
+    header('Location:index.php?error');
+    exit();
+}
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_description.css">
+    <title><?=$row['name']?></title>
+    <link rel="shortcut icon" href="image/favicon.png">
+</head>
+    <body class="body">
+        <div class="container">
+            <?php
+
             ?>
 
             <header class="header">
