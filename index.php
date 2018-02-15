@@ -21,12 +21,10 @@ require_once 'init_db.php';
             <a href="index.php"><img class="logo" src="image/logo.png" alt="logo"></a>
             <div class="mainMenu">
                <div class="sign">
-                  <a href="admin.php">admin_panel</a>
+                   <a href="admin.php"><button class="adminPanelButton" type="button" name="button">admin_panel</button></a>
                </div>
                <nav class="mainNav">
-                  <a class="mainNav_link" href="anime_list.php">anime</a>
-                  <a class="mainNav_link" href="#">manga</a>
-                  <a class="mainNav_link" href="#">ma liste</a>
+                  <a class="mainNav_link" href="anime_list.php">anime list</a>
                </nav>
             </div>
          </div>
@@ -114,12 +112,12 @@ require_once 'init_db.php';
       <footer class="footer">
          <div class="footerContainer">
             <p class=copyright>Copyright 2018.</p>
-            <div class="">
+            <div class="followusContainer">
                <p class="followus">Follow Us</p>
                <div class="icons">
-                  <img src="" alt="">
-                  <img src="" alt="">
-                  <img src="" alt="">
+                  <img class="socialIcon" src="image/twitterIcon.png" alt="twitterIcon">
+                  <img class="socialIcon" src="image/googleplusIcon.png" alt="googleplusIcon">
+                  <img class="socialIcon" src="image/fbIcon.png" alt="fbIcon">
                </div>
             </div>
          </div>

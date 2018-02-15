@@ -8,12 +8,12 @@ if (!isset($_POST['name']) || !isset($_POST['genre']) || !isset($_POST['year']) 
 }
 
 //vérifie que le fichier choisi est une image
-$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+$check = getimagesize($_FILES["image"]["tmp_name"]);
 if($check === false) {
     header('Location: ../admin.php?error_file_format');
     exit();
 }
-$extension=pathinfo($_FILES['fileToUpload']['name'], PATHINFO_EXTENSION);
+$extension=pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
 
 //Commande MySQL
 $requete = "INSERT INTO
@@ -35,7 +35,7 @@ $stmt->execute();
 
 
 $target_file = "../uploads/" . $conn->lastInsertId() . "." . $extension;
-move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "./".$target_file);
+move_uploaded_file($_FILES["image"]["tmp_name"], "./".$target_file);
 
 header('Location: ../admin.php?id='.$conn->lastInsertId());
 exit();

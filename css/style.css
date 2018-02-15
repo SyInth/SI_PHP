@@ -221,3 +221,26 @@
 .footer p {
    font-size: 1.5em;
 }
+
+.adminPanelButton {
+    font-size: 1.1em;
+    padding:10px;
+    margin: 10px 10px 0 0;
+    color: #ffffff;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+.followusContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.followus {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.socialIcon {
+    margin-left: 20px;
+}
